@@ -1,0 +1,51 @@
+.nav{
+    background-color: aqua;
+}
+
+#logoH{
+    width: 50px;
+}
+
+#seprAzul{
+    background-color: cornflowerblue;
+}
+
+.nomCards{
+    font-size: 18px;
+}
+
+.tamCards{
+    width: 300px;
+}
+
+#nosotros{
+    font-size: 20px;
+}
+
+.login-button{
+    background-color: rgb(14, 72, 232);
+    color: aliceblue;
+    font-size: large;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition:0.3s background-color;
+    margin-right: 10px;
+}
+
+.ns{
+    padding-top: 4rem;
+    display: block;
+}
+
+.imgLH{
+    margin-top: 1rem;
+}
+
+#ul{
+    height: 300px;
+}
+
+button{
+    margin-right: 10px;
+}

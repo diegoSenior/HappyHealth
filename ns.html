@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="estiloInicio.css">
+        <title>Happy Health</title>
+    </head>
+    <body style="background-color: rgb(0, 255, 157)">
+      <nav id = "index" class="navbar bg-body-tertiary fixed-top">
+        <div  class="container-fluid" style="background-color: rgba(0, 145, 255, 0.735)">
+          <a class="navbar-brand me-auto" href="#">
+            <img  class="logoH" src="Imagenes/logoH.png" alt="logo" width="50px">
+            Happy Health
+            
+          </a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: rgba(105, 195, 255, 0.899)">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="inicio.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ns.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="slider.html">Promociones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Especialidades
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="log" class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#iniciarSesion" aria-expanded="false" aria-controls="iniciarSesion">
+                Pacientes
+            </button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#iniciarSesionDoc" aria-expanded="false" aria-controls="iniciarSesionDoc">
+                Doctores
+            </button>
+            <a class="login-button" href="nosotros.html">Login</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+    <!-- SECCION: NOSOTROS -------------------------------------------------------------------------------->
+    <div class="ns">
+        <div class="d-flex flex-column container" class="nosotros">
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-center align-items-centers" style="height: 120px;">
+                    <img class="justify-content-center align-items-center" src="Imagenes/logoH.png" alt="logoH" width="120px">
+                    <hr>
+                    <h1 class="mb-0 ms-3">Happy Health</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center justify-content-center flex-grow-1">
+                <div class="col-8" id="">
+                    <h2>MISION</h2>
+                    <p>En Happy Health, nuestra misión es conectarte con médicos especialistas y cirujanos a través de una plataforma integral que ofrece consultas en línea y presenciales. Nos enfocamos en brindarte atención médica personalizada, eficiente y de alta calidad, respaldada por tecnología avanzada y un compromiso con tu bienestar. Facilitamos tu acceso a profesionales de la salud dedicados, mejorando tu experiencia de cuidado mediante innovación, confianza y profesionalismo, siempre con el objetivo de promover tu salud integral de manera accesible y segura.</p>
+                    <h2>VISION</h2>
+                    <p>Ser la plataforma líder que transforme la atención médica al conectar a médicos especialistas y cirujanos con pacientes, integrando consultas en línea y presenciales para ofrecer cuidado de excelencia y accesible en todo momento</p>
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="Imagenes/imgPac.png" class="img-fluid" style="max-width: 100%;">
+                        <h5 style="font-style: italic;" class="text-center">Simplificamos el bienestar para que disfrutes cada paso</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            <div class="row mb-5">
+                <div class="col-7 d-flex flex-column">
+                    <h2>VALORES</h2>
+                    <ol>
+                        <li>Compromiso con el paciente</li>
+                        <p>Escuchamos y comprendemos a cada paciente. Transformamos la vida de las personas a través de un acceso confiable y humano a la salud. Actuamos con rapidez para resolver necesidades.</p>
+                        <li>Excelencia profesional</li>
+                        <p>Nos esforzamos por alcanzar los más altos estándares de calidad. Nos mantenemos actualizados, invertimos en formación continua y aplicamos protocolos rigurosos para garantizar una atención médica precisa, segura y de vanguardia.</p>
+                        <li>Innovación continua</li>
+                        <p>Fomentamos una cultura de mejora constante, donde el pensamiento creativo y la búsqueda de soluciones innovadoras nos permiten evolucionar y ofrecer respuestas efectivas a los desafíos de salud.</p>
+                        <li>Trabajo en equipo</li>
+                        <p>Creemos en la colaboración como pilar fundamental. Promovemos un ambiente donde cada miembro aporta sus conocimientos, se apoya mutuamente y trabaja coordinadamente para lograr objetivos comunes.</p>
+                        <li>Desarrollo humano</li>
+                        <p>Nos comprometemos con el crecimiento personal y profesional de nuestro equipo y nuestros pacientes. Impulsamos espacios de aprendizaje, desarrollo de habilidades y promoción del bienestar integral.</p>
+                        <li>Integridad y transparencia</li>
+                        <p>Actuamos con honestidad, ética y responsabilidad en cada decisión. Mantenemos una comunicación clara, directa y honesta, generando confianza y construyendo relaciones sólidas basadas en el respeto mutuo.</p>
+                    </ol>
+                </div>
+                <div class="col-5 d-flex flex-column">
+                    <div class="d-flex flex-column justify-content-center align-items-center h-100" id="">
+                        <div class="text-center" id="">
+                            <img src="Imagenes/estetoscopio.png" class="img-fluid">
+                            <h5 class="text-end" style="font-style: italic;">Simplificamos el bienestar para que disfrutes cada paso</h5>
+                        </div>
+                        <div class="text-center">
+                            <img src="Imagenes/familia.png" class="img-fluid">
+                            <h5 class="text-end" style="font-style: italic;">Promovemos el bienestar familiar</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h1 id="ns" class="text-center mb-5">NUESTRO EQUIPO</h1>
+            <div class="row nomCards">
+                <div class="col-4 pe-4">
+                    <div class="card">
+                        <img src="Imagenes/JuanPerez.jpeg" class="card-img-top tamCards mx-auto d-block" alt="Juan Perez - Medicina Interna">
+                        <div class="card-body">
+                            <h4>Juan Perez - Medicina Interna</h4>
+                            <p class="card-text">Hola, soy el Director de Diabetes & Care, una clínica creada para ayudar a las personas que viven con Diabetes a superar esta enfermedad y prevenir sus complicaciones. A lo largo de 10 años, hemos ayudado a miles de personas con diabetes a superar sus problemas. Además, como Médico Internista, me especializo en controlar patologías crónicas como Hipertensión Arterial, Obesidad, Hígado Graso, Hipercolesterolemia, enfermedades del corazón, endocrinológicas, entre muchas otras. Si tienes dudas sobre nuestros servicios, no dudes en enviarme un mensaje.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 pe-4">
+                    <div class="card">
+                        <img src="Imagenes/mariana.jpeg" class="card-img-top tamCards mx-auto d-block" alt="Mariana Reyes - Ginecología">
+                        <div class="card-body">
+                            <h4>Mariana Reyes - Ginecología</h4>
+                            <p class="card-text">Hola, soy la Dra. Mariana Reyes, ginecóloga con más de 15 años de experiencia en la atención de la salud femenina. Mi objetivo es brindar un acompañamiento cercano en todas las etapas de la vida de la mujer, desde la adolescencia hasta la menopausia. Me especializo en la prevención y tratamiento de enfermedades ginecológicas, y estoy aquí para ayudarte a cuidar tu salud reproductiva. Si tienes alguna consulta o inquietud, estaré encantada de ayudarte.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="Imagenes/Leonardo.jpeg" class="card-img-top tamCards mx-auto d-block" alt="Leonardo Diaz - Cardiología">
+                        <div class="card-body">
+                            <h4>Leonardo Diaz - Cardiología</h4>
+                            <p class="card-text">Soy el Dr. Leonardo Díaz, cardiólogo con especialización en el diagnóstico y tratamiento de enfermedades del corazón. A lo largo de los años, he trabajado con cientos de pacientes, ayudándolos a controlar enfermedades cardiovasculares y a prevenir complicaciones. Mi enfoque es mejorar tu calidad de vida a través de tratamientos personalizados y prevención. Si tienes alguna pregunta sobre tu salud cardíaca o necesitas orientación, no dudes en contactarme.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row nomCards mt-4">
+                <div class="col-4 pe-4">
+                    <div class="card">
+                        <img src="Imagenes/Brisa.jpeg" class="card-img-top tamCards mx-auto d-block" alt="Brisa Dieras - Geriatría">
+                        <div class="card-body">
+                            <h4>Brisa Dieras - Geriatría</h4>
+                            <p class="card-text">Hola, soy la Dra. Brisa Dieras, especialista en geriatría. Mi misión es cuidar la salud de los adultos mayores, ofreciendo atención integral para mejorar su calidad de vida. A través de un enfoque personalizado, ayudo a gestionar enfermedades crónicas, prevenir caídas y promover un envejecimiento saludable. Si eres un adulto mayor o tienes un ser querido que necesita atención geriátrica, estoy aquí para brindarte el apoyo que necesitas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 pe-4">
+                    <div class="card">
+                        <img src="Imagenes/pedro.jpeg" class="card-img-top tamCards mx-auto d-block" alt="Pedro Fernandez - Pediatría">
+                        <div class="card-body">
+                            <h4>Pedro Fernandez - Pediatría</h4>
+                            <p class="card-text">Hola, soy el Dr. Pedro Fernández, pediatra especializado en el cuidado y bienestar de los niños. Mi objetivo es garantizar un desarrollo saludable desde la infancia hasta la adolescencia, tratando enfermedades comunes y realizando seguimientos preventivos. Me enfoco en brindar un ambiente seguro y confiable para que tanto los niños como sus padres puedan sentirse tranquilos. Si tienes dudas sobre la salud de tus hijos, no dudes en ponerte en contacto conmigo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img id = "ul" src="Imagenes/andres.jpg" class="card-img-top tamCards mx-auto d-block" alt="Andres Garcia - Neurología">
+                        <div class="card-body">
+                            <h4>Andres Garcia - Neurología</h4>
+                            <p class="card-text">Soy el Dr. Andrés García, neurólogo con especialización en el diagnóstico y tratamiento de enfermedades neurológicas. Mi objetivo es proporcionar atención de calidad para aquellos que enfrentan problemas como migrañas, trastornos neurológicos crónicos, enfermedades neurodegenerativas, y mucho más. Me esfuerzo por proporcionar un tratamiento individualizado que se ajuste a las necesidades de cada paciente. Si necesitas orientación o ayuda, estaré encantado de ayudarte.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+            
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        </body>
+    </html>

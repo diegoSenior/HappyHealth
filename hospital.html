@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Pacientes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilo/misestilos.css">
+    <title>Calendario con Botón</title>
+</head>
+<body>
+    <nav id = "index" class="navbar bg-body-tertiary fixed-top">
+        <div  class="container-fluid" style="background-color: rgba(0, 145, 255, 0.735)">
+          <a class="navbar-brand me-auto" href="#">
+            <img  class="logoH" src="Imagenes/logoH.png" alt="logo" width="50px">
+            Happy Health
+            
+          </a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: rgba(105, 195, 255, 0.899)">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="inicio.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ns.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="slider.html">Promociones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Especialidades
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="log" class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#iniciarSesion" aria-expanded="false" aria-controls="iniciarSesion">
+                Pacientes
+            </button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#iniciarSesionDoc" aria-expanded="false" aria-controls="iniciarSesionDoc">
+                Doctores
+            </button>
+            <a class="login-button" href="nosotros.html">Login</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Pacientes</h1>
+        
+        <!-- Tabla de pacientes -->
+        <div class="mb-4">
+            <h2>Lista de Especialidades</h2>
+            <table class="table table-bordered table-hover">
+                <thead class="table-primary">
+                    <tr>
+                        
+                        <th>Nombre del Médico</th>
+                        <th>Especialidad</th>
+                        <th>Horarios</th>
+                        <th>Consultorio y Piso</th>
+                        <th>Contacto</th>
+                        <th>Consultas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>Juan Perez</td>
+                        <td>Medicina Interna</td>
+                        <td>Lunes a Viernes de 8:00 a 18:00</td>
+                        <td>Consultrio 5 Piso 4</td>
+                        <td>Numero de teléfono: 123456789 <br>
+                            Correo: juanperez@gmail.com
+                        </td>
+                        <td>
+                          <button class="btn btn-warning btn-sm">Agendar Cita</button>
+                            <button class="btn btn-danger btn-sm">Editar Cita</button>
+                            <button class="btn btn-danger btn-sm">Eliminar Cita</button>
+                            <center><input type="date" id="dateInput">
+                                <input type="time" id="timeInput">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td>Mariana Reyes</td>
+                        <td>Ginecología</td>
+                        <td>Lunes a Viernes de 8:00 a 14:00</td>
+                        <td>Consultrio 1 Piso 4</td>
+                        <td>Numero de teléfono: 5547897781 <br>
+                            Correo: asientodebici@gmail.com
+                        </td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Agendar Cita</button>
+                            <button class="btn btn-danger btn-sm">Editar Cita</button>
+                            <button class="btn btn-danger btn-sm">Eliminar Cita</button>
+                            <center><input type="date" id="dateInput">
+                                <input type="time" id="timeInput">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td>Leonardo Diaz</td>
+                        <td>Cardiología</td>
+                        <td>Lunes a Viernes de 7:00 a 13:00</td>
+                        <td>Consultrio 3 Piso 4</td>
+                        <td>Numero de teléfono: 5588730125 <br>
+                            Correo: leonardodiaz@gmail.com
+                        </td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Agendar Cita</button>
+                            <button class="btn btn-danger btn-sm">Editar Cita</button>
+                            <button class="btn btn-danger btn-sm">Eliminar Cita</button>
+                            <center><input type="date" id="dateInput">
+                                <input type="time" id="timeInput">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td>Brincos Dieras</td>
+                        <td>Gediatria</td>
+                        <td>Lunes a Viernes de 7:00 a 14:00</td>
+                        <td>Consultrio 2 Piso 4</td>
+                        <td>Numero de teléfono: 5587132452 <br>
+                            Correo: geaBrincos@gmail.com
+                        </td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Agendar Cita</button>
+                            <button class="btn btn-danger btn-sm">Editar Cita</button>
+                            <button class="btn btn-danger btn-sm">Eliminar Cita</button>
+                            <center><input type="date" id="dateInput">
+                                <input type="time" id="timeInput">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td>Pedro Fernandez</td>
+                        <td>Pediatria</td>
+                        <td>Lunes a Viernes de 7:00 a 15:00</td>
+                        <td>Consultrio 6 Piso 4</td>
+                        <td>Numero de teléfono: 5514995795 <br>
+                            Correo: pedritoFernandez@gmail.com
+                        </td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Agendar Cita</button>
+                            <button class="btn btn-danger btn-sm">Editar Cita</button>
+                            <button class="btn btn-danger btn-sm">Eliminar Cita</button>
+                            <center><input type="date" id="dateInput">
+                                <input type="time" id="timeInput">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td>Andres Obreador</td>
+                        <td>Neurología</td>
+                        <td>Lunes a Viernes de 7:00 a 13:30</td>
+                        <td>Consultrio 7 Piso 4</td>
+                        <td>Numero de teléfono: 5554326589 <br>
+                            Correo: neorlogiaHealt@gmail.com
+                        </td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Agendar Cita</button>
+                            <button class="btn btn-danger btn-sm">Editar Cita</button>
+                            <button class="btn btn-danger btn-sm">Eliminar Cita</button>
+                            <center><input type="date" id="dateInput">
+                                <input type="time" id="timeInput">
+                            </center>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+
+    
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

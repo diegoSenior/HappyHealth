@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/estiloInicio.css">
+    
+</head>
+<body>
+
+    <nav id = "index" class="navbar bg-body-tertiary fixed-top">
+        <div  class="container-fluid" style="background-color: rgba(0, 145, 255, 0.735)">
+          <a class="navbar-brand me-auto" href="#">
+            <img  class="logoH" src="Imagenes/logoH.png" alt="logo" width="50px">
+            Happy Health
+            
+          </a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: rgba(105, 195, 255, 0.899)">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="inicio.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ns.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="slider.html">Promociones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Especialidades
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="log" class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#iniciarSesion" aria-expanded="false" aria-controls="iniciarSesion">
+                Pacientes
+            </button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#iniciarSesionDoc" aria-expanded="false" aria-controls="iniciarSesionDoc">
+                Doctores
+            </button>
+            <a class="login-button" href="nosotros.html">Login</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+     <!-- PROMOCIONES -------------------------------------------------------------------------------->
+
+     <div class="d-flex flex-column container" id="nosotros">
+        <seccion class="container"> 
+            <div class="slider-wrapper"> 
+                <center><h1>Estudios en Promoción por Black Friday</h1></center>
+                <div class="slider">
+                    <img id="slider-1"  src="Imagenes/1.png" alt="Prueba de Embarazo">
+                    <img id="slider-2"  src="Imagenes/2.png" alt="Valoracion Tiroides">
+                    <img id="slider-3"  src="imagenes/3.png" alt="Tratamiento del VPH">
+                    <img id="slider-4"  src="imagenes/4.png" alt="Check Up Masculino">
+                    <img id="slider-5"  src="imagenes/5.png" alt="Consulta de Nutricion">
+                    <img id="slider-6"  src="imagenes/6.png" alt="Paquete de Consultas en Psicologia">
+                    <img id="slider-7"  src="imagenes/7.png" alt="Check Up Femenito">
+                    <img id="slider-8"  src="imagenes/8.png" alt="Vavuna Herpes Zóster">
+                    <img id="slider-9"  src="imagenes/9.png" alt="Paquete ginecólogo">
+                </div>
+    
+                <slider class="slider-nav">
+                    <a href="#slider-1"></a>
+                    <a href="#slider-2"></a>
+                    <a href="#slider-3"></a>
+                    <a href="#slider-4"></a>
+                    <a href="#slider-5"></a>
+                    <a href="#slider-6"></a>
+                    <a href="#slider-7"></a>
+                    <a href="#slider-8"></a>
+                    <a href="#slider-9"></a>    
+    
+                </slider>
+    
+            </div>
+        </seccion>
+        
+    </div> <hr>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Pacientes</h1>
+        
+        <!-- Tabla de pacientes -->
+        <div class="mb-4">
+            <h2>Lista de Especialidades</h2>
+            <table class="table table-bordered table-hover">
+                <thead class="table-primary">
+                    <tr>
+                        
+                        <th>Nombre del Médico</th>
+                        <th>Especialidad</th>
+                        <th>Horarios</th>
+                        <th>Consultorio y Piso</th>
+                        <th>Contacto</th>
+                        <th>Consultas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>Juan Perez</td>
+                        <td>Medicina Interna</td>
+                        <td>Lunes a Viernes de 8:00 a 18:00</td>
+                        <td>Consultrio 5 Piso 4</td>
+                        <td>Numero de teléfono: 123456789 <br>
+                            Correo: juanperez@gmail.com
+                        </td>
+                        <td>
+                          <button class="btn btn-warning btn-sm">Agendar Cita</button>
+                            <button class="btn btn-danger btn-sm">Editar Cita</button>
+                            <button class="btn btn-danger btn-sm">Eliminar Cita</button>
+                            <center><input type="date" id="dateInput">
+                                <input type="time" id="timeInput">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td>Mariana Reyes</td>
+                        <td>Ginecología</td>
+                        <td>Lunes a Viernes de 8:00 a 14:00</td>
+                        <td>Consultrio 1 Piso 4</td>
+                        <td>Numero de teléfono: 5547897781 <br>
+                            Correo: asientodebici@gmail.com
+                        </td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Agendar Cita</button>
+                            <button class="btn btn-danger btn-sm">Editar Cita</button>
+                            <button class="btn btn-danger btn-sm">Eliminar Cita</button>
+                            <center><input type="date" id="dateInput">
+                                <input type="time" id="timeInput">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td>Leonardo Diaz</td>
+                        <td>Cardiología</td>
+                        <td>Lunes a Viernes de 7:00 a 13:00</td>
+                        <td>Consultrio 3 Piso 4</td>
+                        <td>Numero de teléfono: 5588730125 <br>
+                            Correo: leonardodiaz@gmail.com
+                        </td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Agendar Cita</button>
+                            <button class="btn btn-danger btn-sm">Editar Cita</button>
+                            <button class="btn btn-danger btn-sm">Eliminar Cita</button>
+                            <center><input type="date" id="dateInput">
+                                <input type="time" id="timeInput">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td>Brincos Dieras</td>
+                        <td>Gediatria</td>
+                        <td>Lunes a Viernes de 7:00 a 14:00</td>
+                        <td>Consultrio 2 Piso 4</td>
+                        <td>Numero de teléfono: 5587132452 <br>
+                            Correo: geaBrincos@gmail.com
+                        </td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Agendar Cita</button>
+                            <button class="btn btn-danger btn-sm">Editar Cita</button>
+                            <button class="btn btn-danger btn-sm">Eliminar Cita</button>
+                            <center><input type="date" id="dateInput">
+                                <input type="time" id="timeInput">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td>Pedro Fernandez</td>
+                        <td>Pediatria</td>
+                        <td>Lunes a Viernes de 7:00 a 15:00</td>
+                        <td>Consultrio 6 Piso 4</td>
+                        <td>Numero de teléfono: 5514995795 <br>
+                            Correo: pedritoFernandez@gmail.com
+                        </td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Agendar Cita</button>
+                            <button class="btn btn-danger btn-sm">Editar Cita</button>
+                            <button class="btn btn-danger btn-sm">Eliminar Cita</button>
+                            <center><input type="date" id="dateInput">
+                                <input type="time" id="timeInput">
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td>Andres Obreador</td>
+                        <td>Neurología</td>
+                        <td>Lunes a Viernes de 7:00 a 13:30</td>
+                        <td>Consultrio 7 Piso 4</td>
+                        <td>Numero de teléfono: 5554326589 <br>
+                            Correo: neorlogiaHealt@gmail.com
+                        </td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">Agendar Cita</button>
+                            <button class="btn btn-danger btn-sm">Editar Cita</button>
+                            <button class="btn btn-danger btn-sm">Eliminar Cita</button>
+                            <center><input type="date" id="dateInput">
+                                <input type="time" id="timeInput">
+                            </center>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+    
+
+<!-- cONTACTO -------------------------------------------------------------------------------->
+
+    <div class="d-flex flex-column container" id="nosotros">
+        <div class="container">
+            <h1>Contacto </h1>
+            <div class="contact-info">
+                <div><strong>Dirección:</strong> Av. Río Churubusco 601, Xoco, Benito Juárez, 03330 Ciudad de México, CDMX</div>
+                <div><strong>Teléfono:</strong> 5514995795</div>
+                <div><strong>Correo:</strong> contactoHappyHealth@gmail.com</div>
+                <div><strong>Horario de atención:</strong> Lunes a Viernes: 8:00 - 19:00 hrs.</div>
+            </div>
+            <center><h3>Envíanos un mensaje</h3></center>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <center><button type="submit">Enviar</button></center>
+            </form>
+        </div>
+    </div> <hr>
+
+    
+    <!-- INICIO DE SESION/REGISTRO -------------------------------------------------------------------------------->
+    <!--
+        <center><h1>Ingresar al Sistema</h1></center>
+    <div class="d-flex flex-column container" id="nosotros">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#iniciarSesion" aria-expanded="false" aria-controls="iniciarSesion">
+            Iniciar Sesión Como Paciente
+            </button>
+    </p>
+        <div class="collapse collapse-horizontal" id="iniciarSesion">
+            <div class="card card-body">
+                <div class="row">
+                    <div id="seprAzul" class="col-6 ">
+                        <div class="d-flex flex-column container vh-100">
+                            <div class="d-flex align-items-center mb-5" style="height: 120px;">
+                                <img src="Imagenes/logoH.png" alt="logoH" width="120px">
+                                <h3 class="mb-0 ms-3">Happy Health</h3>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center w-100" style="height: calc(100vh - 120px);">
+                                <img src="Imagenes/imgPac.png" class="img-fluid" width="">
+                            </div>
+                            <div>
+                                <h5 style="font-style: italic;" class="text-end">Mas que una app, tu compañero de salud</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div id=" " class="col-6">
+                        <div class="row d-flex justify-content-center align-items-center vh-100">
+                            <div class="col-9 container justify-content-center">
+                                <h1 class="text-center">Iniciar sesion</h1>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu correo aqui...">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                  </div>
+                                  <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Mostrar contraseña</label>
+                                  </div>
+                                <div class="col-auto text-center">
+                                    <button type="submit" class="btn btn-primary mb-3">Siguiente</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </div> 
+
+    <div class="d-flex flex-column container" id="nosotros">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#crearCuenta" aria-expanded="false" aria-controls="crearCuenta">
+            Crear Cuenta Como Paciente
+            </button>
+    </p>
+
+    <div class="collapse collapse-horizontal" id="crearCuenta">
+        <div class="card card-body">
+            <div class="row">
+                <div id="" class="col-6">
+                    <div class="row d-flex justify-content-center align-items-center vh-100">
+                        <div class="col-9 container justify-content-center">
+                            <h1 class="text-center">Crea tu cuenta</h1>
+                
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu nombre aqui...">
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="apellido1" class="form-label">Primer apellido</label>
+                                    <input type="text" class="form-control" id="apellido1" placeholder="Escribe tu primer apellido aqui...">
+                                </div>
+                                <div class="col">
+                                    <label for="apellido2" class="form-label">Segundo apellido</label>
+                                    <input type="text" class="form-control" id="apellido2" placeholder="Escribe tu segundo apellido aqui...">
+                                </div>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo</label>
+                                <input type="email" class="form-control" id="correo" placeholder="Escribe tu correo aqui...">
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Escribe tu contraseña aqui...">
+                                </div>
+                                <div class="col">
+                                    <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirma tu contraseña aqui...">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número...">
+                            </div>
+                
+                            <div class="col-auto text-center">
+                                <a class="btn btn-primary" href="#" role="button">Crear Cuenta</a>
+                                <button type="submit" class="btn btn-primary mb-3">Registrarse</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="seprAzul" class="col-6">
+                    <div class="d-flex flex-column container vh-100">
+                        <div class="d-flex align-items-center mb-5" style="height: 120px;">
+                            <img src="Imagenes/logoH.png" alt="logoH" width="120px">
+                            <h3 class="mb-0 ms-3">Happy Health</h3>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center w-100" style="height: calc(100vh - 120px);">
+                            <img src="Imagenes/imgPac.png" class="img-fluid" width="">
+                        </div>
+                        <div>
+                            <h5 style="font-style: italic;" class="text-end">Mas que una app, tu compañero de salud</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div> <hr>
+    -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
